@@ -62,12 +62,9 @@ public class Capteur2 extends Thread {
 		                //close resources
 		                oos.close();
 		                Thread.sleep(100);
-		            
-		    		
 		                socket.close();
 
 		    		}
-		    		
 		    		
 		    	} catch (Exception e) {
 		    		e.printStackTrace();

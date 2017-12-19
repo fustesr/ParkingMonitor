@@ -15,9 +15,9 @@ public class Serveur {
 		fichier = new File("data.txt");
 
 		
-		capteur1 = new Capteur1(1, 5000, 180);
+		capteur1 = new Capteur1(1, 8000, 180);
 		capteur2 = new Capteur2(2, 5000, 180);
-		capteur3 = new Capteur3(3, 5000, 180);
+		capteur3 = new Capteur3(3, 10000, 180);
 		
 	}
 	
@@ -25,12 +25,6 @@ public class Serveur {
 	public void startServer() throws FileNotFoundException {
 		
 		capteur1.start();
-//		try {
-//			Thread.sleep(1000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
 		capteur2.start();
 		capteur3.start();
 		

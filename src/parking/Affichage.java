@@ -6,20 +6,13 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.GridLayout;
 import java.awt.Stroke;
 import java.awt.geom.Line2D;
  
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
  
-/**
- * This program demonstrates how to draw lines using Graphics2D object.
- * @author www.codejava.net
- *
- */
 public class Affichage extends JFrame {
 	static JLabel textE1 ;
 	static JLabel textE2 ;
@@ -103,8 +96,6 @@ public class Affichage extends JFrame {
             @Override
             public void run() {
                 new Affichage().setVisible(true);
-                //String d = "5";
-                //textE1.setText(d);
             }
         });
     }

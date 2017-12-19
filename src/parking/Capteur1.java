@@ -35,7 +35,6 @@ public class Capteur1 extends Thread {
 		    		currentData = Serveur.getDataFromFile(0);
 		    		afterProcessing = Serveur.filtre1(currentData);
 		    		
-		    		
 		            Socket socket = null;
 		            ObjectOutputStream oos = null;
 
@@ -50,12 +49,9 @@ public class Capteur1 extends Thread {
 	                //close resources
 	                oos.close();
 	                Thread.sleep(100);
-	            
-	    		
 	                socket.close();
 		    			
-		    		
-		    		
+
 		    	} catch (Exception e) {
 		    		e.printStackTrace();
 		    	}

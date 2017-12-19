@@ -2,7 +2,6 @@ package parking;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -45,7 +44,6 @@ public class Client {
 					    try {
 							Thread.sleep(300);
 						} catch (InterruptedException e) {
-							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
 					    Affichage.textE1.setText(message);
@@ -54,10 +52,8 @@ public class Client {
 					    socket.close();
 					}
 				} catch (ClassNotFoundException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
@@ -87,7 +83,6 @@ public class Client {
 					    try {
 							Thread.sleep(300);
 						} catch (InterruptedException e) {
-							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
 					    Affichage.textE2.setText(message);
@@ -96,10 +91,8 @@ public class Client {
 					    socket.close();
 					}
 				} catch (ClassNotFoundException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
@@ -128,7 +121,6 @@ public class Client {
 					    try {
 							Thread.sleep(300);
 						} catch (InterruptedException e) {
-							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
 					    Affichage.textE3.setText(message);
@@ -137,10 +129,8 @@ public class Client {
 					    socket.close();
 					}
 				} catch (ClassNotFoundException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
